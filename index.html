@@ -24,6 +24,7 @@
 <body>
     <!-- map -->
     <div id='map'></div>
+    
     <!-- Trigger/Open The Modal -->
     <button id="opener">Open Modal</button>
 
@@ -32,8 +33,11 @@
 
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Some text in the Modal..</p>
+            <form action="/action_page.php">
+                <label for="playlist">enter a link to your playlist to see relevant concerts</label><br>
+                <input type="text" id="playlist" name="playlist"><br><br>
+                <input type="submit" value="Submit">
+              </form> 
         </div>
 
     </div>
